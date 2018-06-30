@@ -1,0 +1,8 @@
+<a routerLink="/restaurantAdd" class="addBtn">Add</a>
+<ul>
+  <li *ngFor="let restaurant of restaurants | async">
+    <p>{{restaurant.name}}</p>
+    <p>{{restaurant.description}}</p>
+    <button (click)="removeRestaurant(restaurant._id)" class="deleteBtn">Delete</button>
+  </li>
+</ul>

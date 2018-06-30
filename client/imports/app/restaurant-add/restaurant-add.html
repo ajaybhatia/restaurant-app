@@ -1,0 +1,10 @@
+<a routerLink="/restaurantList">List</a>
+<fieldset>
+  <legend>Add Restaurant</legend>
+  <label for="content">
+    Name
+  </label>
+  <input [(ngModel)]="name">
+  <input [(ngModel)]="description">
+  <button (click)="addRestaurant()">Add</button>
+</fieldset>
