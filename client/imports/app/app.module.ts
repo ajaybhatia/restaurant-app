@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 
 import { RestaurantAddComponent } from './restaurant-add/restaurant-add.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
@@ -25,6 +26,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       {
         path: 'restaurantAdd',
         component: RestaurantAddComponent
+      },
+      {
+        path: 'restaurantDetail/:id',
+        component: RestaurantDetailComponent
       },
       // Home Page
       {
@@ -43,6 +48,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent,
     RestaurantAddComponent,
     RestaurantListComponent,
+    RestaurantDetailComponent,
     PageNotFoundComponent
   ],
   bootstrap: [
